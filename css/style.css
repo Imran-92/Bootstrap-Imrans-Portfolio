@@ -1,10 +1,11 @@
 :root {
   --mainColor:rgb(255, 187, 0);
   --secondaryColor:rgb(255, 255, 255);
+  --mainFont:'Poppins', sans-serif;
 }
 
 .navbar-brand {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--mainFont);
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 4px;
@@ -22,7 +23,7 @@
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 3.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--mainFont);
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 4px;
@@ -45,7 +46,29 @@
   justify-content: flex-start;
   align-items: center;
   padding: 0px;
-  margin-right: 55%;
-  margin-left: 7%;
+  margin-right: 54%;
+  margin-left: 6%;
   color: var(--mainColor);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.display-4 {
+  font-size: 3.5rem;
+  font-family: var(--mainFont);
+  font-weight: 200;
+}
+
+.lead {
+  font-size: 1.50rem;
+  font-weight: 300;
+}
+
+.btn-primary {
+  color: #000;
+  background-color: var(--mainColor);
+  border-color: var(--mainColor);
+  font-family: var(--mainFont);
+  font-weight: 300;
 }
